@@ -1,0 +1,47 @@
+{%extends 'mainapp/sidebar.html'%}
+{%load static%}
+
+	{%block title%}
+		Bizimlə əlaqə
+	{%endblock%}
+	{%block styles%}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static 'css/contact_us.css'%}">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	 {%endblock%}
+
+{%block content%}
+
+	
+<div class="box1 bg-white">
+	 	<p class="first_paragraf">Contact us...</p>
+	 	<p class="second_paragraf">You can share your questions, ideas or tips by contacting us.</p>
+	 	<p class="third_paragraf">Send us a message...</p>
+        <form method="POST" action="{%url 'go_to_contact_us'%}">
+			{%csrf_token%}
+	   		<div class="box2" >
+	   			<div>
+	   			<img  class="user-icon" src="{%static 'images/user_ico.png'%}" alt="">
+	   			<input required type="text" name="name_and_surname" class="name" placeholder="Name and Surname">
+	   		   </div>
+	   		</div>
+        <div class="box3" >
+	   			<div>
+	   			<img class="user-icon1" src="{%static 'images/email_ico.png'%}" alt="">
+	   			<input type="email" name="mail" class="mail" placeholder="E-mail" required>
+	   		   </div>
+	   		</div>
+	   		<div class="box4">
+					<textarea required type="text"  name="message" placeholder="Message" class="message form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+	   		   <button class="send">SEND</button>
+			   </div>
+			   {{mes}}
+	   	</form>
+</div>
+
+
+{%endblock%}
+
+

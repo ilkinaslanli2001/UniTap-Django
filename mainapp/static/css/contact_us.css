@@ -1,0 +1,1064 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #FBFBFB;
+}
+
+.box1{
+	position: absolute;
+	width: 814px;
+	height: 462px;
+	left: 404px;
+    top: 134px;
+    -webkit-box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+    -moz-box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+    box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+}
+ .first_paragraf{
+ 	color: #000000;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 010px;
+    margin-left: 25px;
+    margin-top: 25px;
+         }
+.second_paragraf{
+    color: #a3a3a3;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0 0 20px;
+    margin-left: 25px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 30px;
+    width: 723px;
+         }
+.third_paragraf{
+	    margin: 0 0 20px;
+	    color: #000000;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        line-height: 26px;
+        margin-left: 25px;
+        margin-bottom: 50px;
+}
+.user-icon,.user-icon1{
+	width: 40px;
+	height: 40px;
+	margin-left: 6px;
+	margin-top: 3px; 
+	padding: 7px 7px;
+}
+.box2,.box3{
+	border: 1px solid black;
+	width: 55px;
+	height: 50px;
+	margin-left: 23px;
+	margin-top: 20px;
+}
+.name,.mail{
+	position: relative;
+        margin-left: 53px;
+        top: -44px;
+        width: 310px;
+        height: 50px;
+        padding: 5px 5px;
+}
+.box4{
+	position: absolute;
+	top: 197px;
+	margin-left: 403px;
+}
+.message{
+	width: 393px;
+	height: 200px;
+    padding: 6px 6px;
+    resize: none;
+}
+textarea{
+    height: 122px !important;
+}
+.send{
+    width: 394px;
+    height: 60px;
+	margin-top: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 19px;
+    background: #1ab5b3;
+    text-transform: uppercase;
+    border: none;
+}
+.send:hover{
+	background-color: #26C3C1;
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width:1920px){
+    .box1{
+        position: absolute;
+         width: 804px;
+         height: 443px;
+         left: 455px;
+         top: 84px;
+        -webkit-box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+        -moz-box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+        box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+    }
+}
+@media only screen and (max-width:1366px){
+    .box1{
+        position: absolute;
+         width: 804px;
+         height: 443px;
+         left: 294px;
+         top: 84px;
+        -webkit-box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+        -moz-box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+        box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+    }
+}
+@media only screen and (max-width:1024px){
+    .box1{
+        position: absolute;
+         width: 804px;
+         height: 443px;
+         left: 110px;
+         top: 84px;
+        -webkit-box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+        -moz-box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+        box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+    }
+}
+@media only screen and (max-width:961px){
+    .box1{
+        position: absolute;
+         width: 804px;
+         height: 443px;
+         left: 81px;
+         top: 84px;
+        -webkit-box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+        -moz-box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+        box-shadow: 6px 8px 17px 1px rgba(0,0,0,0.47);
+    }
+}
+@media only screen and (max-width:825px){
+    .box1 {
+        position: absolute;
+        width: 314px;
+        height: 470px;
+        left: 259px;
+        top: 43px;
+        border-radius: 14px;
+        }
+        .second_paragraf{
+            width: 290px;
+            margin-bottom: 19px;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .box2 input,.mail{
+            top:-44px;
+            width: 224px;
+            
+        }
+        form{
+            margin-top: -36px;
+        }
+        .box4{
+            margin-top: 10px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        textarea{
+            width: 280px !important;
+            height: 111px !important;
+            margin-left:20px !important;
+            margin-top: 88px !important;
+         }
+         .send{
+            width: 283px;
+            height: 52px;
+            margin-left:19px;
+            margin-top: 2px;
+            border-radius: 13px;
+         }
+   
+}
+@media only screen and (max-width:815px){
+    .box1 {
+        position: absolute;
+        width: 314px;
+        height: 470px;
+        left: 230px;
+        top: 43px;
+        border-radius: 14px;
+        }
+        .second_paragraf{
+            width: 290px;
+            margin-bottom: 19px;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .box2 input,.mail{
+            top:-44px;
+            width: 224px;
+            
+        }
+        form{
+            margin-top: -36px;
+        }
+        .box4{
+            margin-top: 10px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        textarea{
+            width: 280px !important;
+            height: 111px !important;
+            margin-left:20px !important;
+            margin-top: 88px !important;
+         }
+         .send{
+            width: 283px;
+            height: 52px;
+            margin-left:19px;
+            margin-top: 2px;
+            border-radius: 13px;
+         }
+   
+}
+@media only screen and (max-width:770px){
+    .box1 {
+        position: absolute;
+        width: 314px;
+        height: 470px;
+        left: 230px;
+        top: 43px;
+        border-radius: 14px;
+        }
+        .second_paragraf{
+            width: 290px;
+            margin-bottom: 19px;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .box2 input,.mail{
+            top:-44px;
+            width: 225px;
+            
+        }
+        form{
+            margin-top: -36px;
+        }
+        .box4{
+            margin-top: 10px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        textarea{
+            width: 280px !important;
+            height: 111px !important;
+            margin-left:20px !important;
+            margin-top: 88px !important;
+         }
+         .send{
+            width: 283px;
+            height: 52px;
+            margin-left:19px;
+            margin-top: 2px;
+            border-radius: 13px;
+         }
+   
+}
+
+@media only screen and (max-width:737px){
+    .box1 {
+        position: absolute;
+        width: 314px;
+        height: 470px;
+        left: 192px;
+        top: 43px;
+        border-radius: 14px;
+        }
+        .second_paragraf{
+            width: 290px;
+            margin-bottom: 19px;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .box2 input,.mail{
+            top:-44px;
+            width: 224px;
+            
+        }
+        form{
+            margin-top: -36px;
+        }
+        .box4{
+            margin-top: 10px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        textarea{
+            width: 280px !important;
+            height: 111px !important;
+            margin-left:20px !important;
+            margin-top: 88px !important;
+         }
+         .send{
+            width: 283px;
+            height: 52px;
+            margin-left:19px;
+            margin-top: 2px;
+            border-radius: 13px;
+         }
+   
+}
+
+@media only screen and (max-width:733px){
+    .box1 {
+        position: absolute;
+        width: 314px;
+        height: 470px;
+        left: 192px;
+        top: 43px;
+        border-radius: 14px;
+        }
+        .second_paragraf{
+            width: 290px;
+            margin-bottom: 19px;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .box2 input,.mail{
+            top:-44px;
+            width: 224px;
+            
+        }
+        form{
+            margin-top: -36px;
+        }
+        .box4{
+            margin-top: 10px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        textarea{
+            width: 280px !important;
+            height: 111px !important;
+            margin-left:20px !important;
+            margin-top: 88px !important;
+         }
+         .send{
+            width: 283px;
+            height: 52px;
+            margin-left:19px;
+            margin-top: 2px;
+            border-radius: 13px;
+         }
+   
+}
+
+@media only screen and (max-width:668px){
+    .box1 {
+        position: absolute;
+        width: 314px;
+        height: 470px;
+        left: 177px;
+        top: 43px;
+        border-radius: 14px;
+        }
+        .second_paragraf{
+            width: 290px;
+            margin-bottom: 19px;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .box2 input,.mail{
+            top:-44px;
+            width: 224px;
+            
+        }
+        form{
+            margin-top: -36px;
+        }
+        .box4{
+            margin-top: 10px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        textarea{
+            width: 280px !important;
+            height: 111px !important;
+            margin-left:20px !important;
+            margin-top: 88px !important;
+         }
+         .send{
+            width: 283px;
+            height: 52px;
+            margin-left:19px;
+            margin-top: 2px;
+            border-radius: 13px;
+         }
+   
+}
+
+@media only screen and (max-width:641px){
+    .box1 {
+        position: absolute;
+        width: 314px;
+        height: 470px;
+        left: 162px;
+        top: 43px;
+        border-radius: 14px;
+        }
+        .second_paragraf{
+            width: 290px;
+            margin-bottom: 19px;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .box2 input,.mail{
+            top:-44px;
+            width: 224px;
+            
+        }
+        form{
+            margin-top: -36px;
+        }
+        .box4{
+            margin-top: 10px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        textarea{
+            width: 280px !important;
+            height: 111px !important;
+            margin-left:20px !important;
+            margin-top: 88px !important;
+         }
+         .send{
+            width: 283px;
+            height: 52px;
+            margin-left:19px;
+            margin-top: 2px;
+            border-radius: 13px;
+         }
+   
+}
+@media only screen and (max-width:601px){
+    .box1 {
+        position: absolute;
+        width: 314px;
+        height: 470px;
+        left: 140px;
+        top: 93px;
+        border-radius: 14px;
+        }
+        .second_paragraf{
+            width: 290px;
+            margin-bottom: 19px;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .box2 input,.mail{
+            top:-44px;
+            width: 224px;
+            
+        }
+        form{
+            margin-top: -36px;
+        }
+        .box4{
+            margin-top: 10px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        textarea{
+            width: 280px !important;
+            height: 111px !important;
+            margin-left:20px !important;
+            margin-top: 88px !important;
+         }
+         .send{
+            width: 283px;
+            height: 52px;
+            margin-left:19px;
+            margin-top: 2px;
+            border-radius: 13px;
+         }
+   
+}
+@media only screen and (max-width:570px){
+    .box1 {
+        position: absolute;
+        width: 314px;
+        height: 470px;
+        left: 130px;
+        top: 50px;
+        border-radius: 14px;
+        }
+        .second_paragraf{
+            width: 290px;
+            margin-bottom: 19px;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .box2 input,.mail{
+            top:-44px;
+            width: 224px;
+            
+        }
+        form{
+            margin-top: -36px;
+        }
+        .box4{
+            margin-top: 10px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        textarea{
+            width: 280px !important;
+            height: 111px !important;
+            margin-left:20px !important;
+            margin-top: 88px !important;
+         }
+         .send{
+            width: 283px;
+            height: 52px;
+            margin-left:19px;
+            margin-top: 2px;
+            border-radius: 13px;
+         }
+   
+}
+@media only screen and (max-width:415px){
+    .box1 {
+    position: absolute;
+    width: 314px;
+    height: 470px;
+    left: 48px;
+    top: 86px;
+    border-radius: 14px;
+    }
+    .second_paragraf{
+		width: 290px;
+		margin-bottom: 19px;
+        line-height: 22px;
+		font-size: 13px;
+    }
+    .box2 input,.mail{
+		top:-44px;
+        width: 224px;
+        
+    }
+    form{
+		margin-top: -36px;
+    }
+    .box4{
+		margin-top: 10px;
+		margin-left: 2px;
+		width: 10px;
+		height: 10px;
+    }
+    textarea{
+        width: 280px !important;
+        height: 111px !important;
+        margin-left:20px !important;
+        margin-top: 88px !important;
+     }
+     .send{
+        width: 283px;
+        height: 52px;
+        margin-left:19px;
+        margin-top: 2px;
+        border-radius: 13px;
+     }
+     
+   
+} 
+@media only screen and (max-width:412px){
+    .box1 {
+    position: absolute;
+    width: 314px;
+    height: 470px;
+    left: 45px;
+    top: 86px;
+    border-radius: 14px;
+    }
+    .second_paragraf{
+		width: 290px;
+		margin-bottom: 19px;
+        line-height: 22px;
+		font-size: 13px;
+    }
+    .box2 input,.mail{
+		top:-44px;
+        width: 224px;
+        
+    }
+    form{
+		margin-top: -36px;
+    }
+    .box4{
+		margin-top: 10px;
+		margin-left: 2px;
+		width: 10px;
+		height: 10px;
+    }
+    textarea{
+        width: 280px !important;
+        height: 111px !important;
+        margin-left:20px !important;
+        margin-top: 88px !important;
+     }
+     .send{
+        width: 283px;
+        height: 52px;
+        margin-left:19px;
+        margin-top: 2px;
+        border-radius: 13px;
+     }
+     
+   
+} 
+@media only screen and (max-width:375px){
+    .box1 {
+    position: absolute;
+    width: 314px;
+    height: 470px;
+    left: 30px;
+    top: 86px;
+    border-radius: 14px;
+    }
+    .second_paragraf{
+		width: 290px;
+		margin-bottom: 19px;
+        line-height: 22px;
+		font-size: 13px;
+    }
+    .box2 input,.mail{
+		top:-44px;
+        width: 224px;
+        
+    }
+    form{
+		margin-top: -36px;
+    }
+    .box4{
+		margin-top: 10px;
+		margin-left: 2px;
+		width: 10px;
+		height: 10px;
+    }
+    textarea{
+        width: 280px !important;
+        height: 111px !important;
+        margin-left:20px !important;
+        margin-top: 88px !important;
+     }
+     .send{
+        width: 283px;
+        height: 52px;
+        margin-left:19px;
+        margin-top: 2px;
+        border-radius: 13px;
+     }
+     
+   
+}
+@media only screen and (max-width:361px){
+    .box1 {
+    position: absolute;
+    width: 314px;
+    height: 470px;
+    left: 22px;
+    top: 86px;
+    border-radius: 14px;
+    }
+    .second_paragraf{
+		width: 290px;
+		margin-bottom: 19px;
+        line-height: 22px;
+		font-size: 13px;
+    }
+    .box2 input,.mail{
+		top:-44px;
+        width: 224px;
+        
+    }
+    form{
+		margin-top: -36px;
+    }
+    .box4{
+		margin-top: 10px;
+		margin-left: 2px;
+		width: 10px;
+		height: 10px;
+    }
+    textarea{
+        width: 280px !important;
+        height: 111px !important;
+        margin-left:20px !important;
+        margin-top: 88px !important;
+     }
+     .send{
+        width: 283px;
+        height: 52px;
+        margin-left:19px;
+        margin-top: 2px;
+        border-radius: 13px;
+     }
+     
+   
+}
+@media only screen and (max-width:322px){
+    .box1 {
+    position: absolute;
+    width: 314px;
+    height: 470px;
+    left: 4px;
+    top: 74px;
+    border-radius: 14px;
+    }
+    .second_paragraf{
+        width: 290px;
+        margin-bottom: 19px;
+        line-height: 22px;
+        font-size: 13px;
+    }
+    .box2 input,.mail{
+        top:-44px;
+        width: 224px;
+        
+    }
+    form{
+        margin-top: -36px;
+    }
+    .box4{
+        margin-top: 10px;
+        margin-left: 2px;
+        width: 10px;
+        height: 10px;
+    }
+    textarea{
+        width: 280px !important;
+        height: 111px !important;
+        margin-left:20px !important;
+        margin-top: 88px !important;
+     }
+     .send{
+        width: 283px;
+        height: 52px;
+        margin-left:19px;
+        margin-top: 2px;
+        border-radius: 13px;
+     }
+     
+   
+}
+
+/*Pixel2*/
+
+
+
+
+
+/*Pixel2XL*/
+
+    /* @media only screen and (max-width:824px){
+        .box1 {
+            position: absolute;
+            width: 314px;
+            height: 470px;
+            left: 247px;
+            top: 43px;
+            border-radius: 14px;
+            }
+            .second_paragraf{
+                width: 290px;
+                margin-bottom: 19px;
+                line-height: 22px;
+                font-size: 13px;
+            }
+            .box2 input,.mail{
+                top:-44px;
+                width: 224px;
+                
+            }
+            form{
+                margin-top: -36px;
+            }
+            .box4{
+                margin-top: 10px;
+                margin-left: 2px;
+                width: 10px;
+                height: 10px;
+            }
+            textarea{
+                width: 280px !important;
+                height: 111px !important;
+                margin-left:20px !important;
+                margin-top: 88px !important;
+             }
+             .send{
+                width: 283px;
+                height: 52px;
+                margin-left:19px;
+                margin-top: 2px;
+                border-radius: 13px;
+             }
+       
+    }
+    
+    
+    @media only screen and (max-width:413px){
+        .box1 {
+        position: absolute;
+        width: 314px;
+        height: 470px;
+        left: 47px;
+        top: 86px;
+        border-radius: 14px;
+        }
+        .second_paragraf{
+            width: 290px;
+            margin-bottom: 19px;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .box2 input,.mail{
+            top:-44px;
+            width: 224px;
+            
+        }
+        form{
+            margin-top: -36px;
+        }
+        .box4{
+            margin-top: 10px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        textarea{
+            width: 280px !important;
+            height: 111px !important;
+            margin-left:20px !important;
+            margin-top: 88px !important;
+         }
+         .send{
+            width: 283px;
+            height: 52px;
+            margin-left:19px;
+            margin-top: 2px;
+            border-radius: 13px;
+         }
+         
+       
+    } */
+
+    /*Iphone5/SE*/
+    /* @media only screen and (max-width:569px){
+        .box1 {
+            position: absolute;
+            width: 314px;
+            height: 470px;
+            left: 147px;
+            top: 43px;
+            border-radius: 14px;
+            }
+            .second_paragraf{
+                width: 290px;
+                margin-bottom: 19px;
+                line-height: 22px;
+                font-size: 13px;
+            }
+            .box2 input,.mail{
+                top:-44px;
+                width: 224px;
+                
+            }
+            form{
+                margin-top: -36px;
+            }
+            .box4{
+                margin-top: 10px;
+                margin-left: 2px;
+                width: 10px;
+                height: 10px;
+            }
+            textarea{
+                width: 280px !important;
+                height: 111px !important;
+                margin-left:20px !important;
+                margin-top: 88px !important;
+             }
+             .send{
+                width: 283px;
+                height: 52px;
+                margin-left:19px;
+                margin-top: 2px;
+                border-radius: 13px;
+             }
+       
+    }
+    
+    
+    @media only screen and (max-width:322px){
+        .box1 {
+        position: absolute;
+        width: 314px;
+        height: 470px;
+        left: 4px;
+        top: 74px;
+        border-radius: 14px;
+        }
+        .second_paragraf{
+            width: 290px;
+            margin-bottom: 19px;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .box2 input,.mail{
+            top:-44px;
+            width: 224px;
+            
+        }
+        form{
+            margin-top: -36px;
+        }
+        .box4{
+            margin-top: 10px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        textarea{
+            width: 280px !important;
+            height: 111px !important;
+            margin-left:20px !important;
+            margin-top: 88px !important;
+         }
+         .send{
+            width: 283px;
+            height: 52px;
+            margin-left:19px;
+            margin-top: 2px;
+            border-radius: 13px;
+         }
+         
+       
+    } */
+ /*Iphone6/7/8 */
+ /* @media only screen and (max-width:376px){
+    .box1 {
+        position: absolute;
+        width: 314px;
+        height: 470px;
+        left: 31px;
+        top: 82px;
+        border-radius: 14px;
+    }
+        
+        .second_paragraf{
+            width: 290px;
+            margin-bottom: 19px;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .box2 input,.mail{
+            top:-44px;
+            width: 224px;
+            
+        }
+        form{
+            margin-top: -36px;
+        }
+        .box4{
+            margin-top: 10px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        textarea{
+            width: 280px !important;
+            height: 111px !important;
+            margin-left:20px !important;
+            margin-top: 88px !important;
+         }
+         .send{
+            width: 283px;
+            height: 52px;
+            margin-left:19px;
+            margin-top: 2px;
+            border-radius: 13px;
+         }
+   
+} */
+
+
+/* @media only screen and (max-width:668px){
+    .box1 {
+    position: absolute;
+    width: 314px;
+    height: 470px;
+    left:168px;
+    top: 74px;
+    border-radius: 14px;
+    }
+    .second_paragraf{
+        width: 290px;
+        margin-bottom: 19px;
+        line-height: 22px;
+        font-size: 13px;
+    }
+    .box2 input,.mail{
+        top:-44px;
+        width: 224px;
+        
+    }
+    form{
+        margin-top: -36px;
+    }
+    .box4{
+        margin-top: 10px;
+        margin-left: 2px;
+        width: 10px;
+        height: 10px;
+    }
+    textarea{
+        width: 280px !important;
+        height: 111px !important;
+        margin-left:20px !important;
+        margin-top: 88px !important;
+     }
+     .send{
+        width: 283px;
+        height: 52px;
+        margin-left:19px;
+        margin-top: 2px;
+        border-radius: 13px;
+     }
+     
+   
+} */

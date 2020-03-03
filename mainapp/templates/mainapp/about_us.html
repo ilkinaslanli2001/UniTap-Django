@@ -1,0 +1,43 @@
+{%extends 'mainapp/sidebar.html'%}
+{%load static%}
+
+{%block styles%}
+    <link rel="stylesheet" href="{%static 'css/about_us.css'%}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+{%endblock%}
+{%block content%}
+    <div class="aboutus_content">
+        <h4 class="title">About Website</h4>
+        <hr>    
+        <p class="text">This website is my first project on Django which displays universities in Azerbaijan. </p>
+        <hr>
+        <h4 class="title">Creators</h4>
+        <hr>
+        <div class="creators">
+           
+             <div class="creator">
+                <img src="{%static 'images/Ilkin.jpg'%}" alt="">
+                <div class="texts">
+                    <h4>ILKIN ASLANLI</h4>
+                    <p>Worked on Front and Back-end</p>
+                    <a href="https://ilkinaslanli2001.github.io/portfolio/">ilkinaslanli2001.github.io/portfolio/</a>
+            </div>
+           
+            </div>
+             <div class="creator">
+                <img src="{%static 'images/Ilkin.jpg'%}" alt="">
+                <div class="texts">
+                    <h4>ILKIN ASLANLI</h4>
+                    <p>Worked on Front and Back-end</p>
+                    <a href="https://ilkinaslanli2001.github.io/portfolio/">ilkinaslanli2001.github.io/portfolio/</a>
+                </div>
+            </div>
+           
+
+
+        </div>
+    </div>
+
+
+
+{%endblock%}

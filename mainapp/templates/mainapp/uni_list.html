@@ -1,0 +1,47 @@
+
+{%extends 'mainapp/sidebar.html'%}
+{%load static%}
+{%block title%}
+Universitetler
+{%endblock%}
+
+{%block styles%}
+
+<link rel="stylesheet" href="{%static 'css/unilist.css'%}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+{%endblock%}
+
+{%block content%}
+<div class="search">
+   <form class="form-inline" role = "search" method = "GET" action="">
+        <input class="form-control mr-sm-2" type="text" name="q" autocomplete="off" placeholder="" aria-label="Search" value="{{ request.GET.q }}">
+        <datalist id="datalist" class="datalist">
+           {%for uni in uni_list%}
+           <option value="{{uni.UniName}}">
+           {%endfor%}
+
+        </datalist>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Axtar</button>
+        
+     </form>
+
+
+</div>
+<section id="uni_list" class="uni_list">
+
+      {%for uni in uni_list%}
+      <a  class="link" target="_blank" href="{%url 'go_to_more_uni' uniId=uni.id%}">
+          <div class="uni">
+          <div class="boxImg"><img class="unilogo" src="{{uni.UniImage1.url}}" alt="Природа">
+             <div class="block_text container">
+                <p style="color: white;font-size:25px; margin-top: 10px;" class="name_text">{{uni.UniName}}</p>
+             </div>
+          </div>
+       </div>
+    </a>
+    
+   
+  {%endfor%}
+  </section>
+
+  {%endblock%}

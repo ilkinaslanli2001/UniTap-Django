@@ -1,0 +1,181 @@
+{%extends 'mainapp/sidebar.html'%}
+{%load static%}
+
+{%block title%}
+{%for uni_data in uni_data%}
+{{uni_data.UniName|safe}} • Universitetler
+{%endfor%}
+{%endblock%}
+
+
+
+{%block styles%}
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="{%static 'css/more_about_uni.css'%}">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="{%static 'css/lightbox.css'%}">
+	<script src="{%static 'js/lightbox.min.js'%}">  </script>
+	{%endblock%}
+{%block content%}
+
+{%for uni_data in uni_data%}
+	<div class="main_img">
+		<img src="{{uni_data.UniImage1.url|safe}}" alt="">
+	</div>
+	<div class="left_page"></div>
+	<div class="right_page1" id="right_page1">
+		<div class="university_name">
+			<p>{{uni_data.UniName|safe}}</p><br>
+			<a  target="_blank" class="uni_link" href="{{uni_data.UniWebsite|safe}}">{{uni_data.UniWebsite|safe}}</a>
+		</div>
+
+
+<div class="table1">
+	<div class="icon_box">
+		<img src="{% static 'images/manat.png'%}" alt="">
+	</div>
+	<div class="title_header">
+		<p>University fee in {{uni_data.UniYear}}</p>
+	</div>
+	<div class="data">
+		<p>From {{uni_data.UniMinPayment}} ₼ to {{uni_data.UniMaxPayment}} ₼ </p>
+	</div>
+</div>
+
+{%if uni_data.UniStudentsCount%}
+<div class="table1">
+	<div class="icon_box">
+		<img src="{% static 'images/student.png'%}" alt="">
+	</div>
+	<div class="title_header">
+		<p>Number of students</p>
+	</div>
+	<div class="data">
+		<p>{{uni_data.UniStudentsCount}}</p>
+	</div>
+</div>
+{%endif%}
+
+
+<div class="table1">
+	
+	<div class="icon_box">
+		<img src="{% static 'images/house.png'%}" alt="">
+	</div>
+	<div class="title_header">
+		<p>Dormitory</p>
+	</div>
+	<div class="data">
+		<p>{{uni_data.Dormitory}}</p>
+	</div>
+</div>
+	</div>
+	<aside class ="uni_functions">
+		<a href="#right_page1">
+			<div>
+				<p >Information for students</p>
+		</div>
+		</a>
+	
+		<a href="#galery">
+				<div>
+					<p>Pictures</p>
+				</div>
+			</a>
+			<a href="#right_page2">
+				<div>
+					<p href="">Contacts</p>
+				</div>
+			</a>
+  
+	</aside>
+<div class="right_page4" id="right_page4">
+	<div class="page3_name" id="galery">
+		<p>Galereya</p>
+	</div>
+	<div class="galery">
+		{%for i in Images.0%}
+		{%if i %}
+		<a href="{{i.url}}" data-lightbox="mygallery"><img src="{{i.url}}" alt="" class="uni_images"></a>
+		{%endif%}
+		{%endfor%}
+	</div>
+</div>
+
+	<div class="right_page2" id="right_page2">
+
+		<div class="table2">
+
+			<div class="table_name">
+				<p>Contact information</p>
+			</div>
+
+
+			<div class="table1">
+	<div class="icon_box">
+		<img src="{%static 'images/location.png'%}" alt="">
+	</div>
+	<div class="title_header">
+		<p>Adress</p>
+	</div>
+	
+	<div class="data">
+		<p>{{uni_data.UniAdressForUser|safe}}</p>
+	</div>
+</div>
+<div class="table1">
+	<div class="icon_box">
+		<img src="{%static 'images/time.png'%}" alt="">
+	</div>
+	<div class="title_header">
+		<p>İş vaxtı:</p>
+	</div>
+	
+	<div class="data">
+		<p>
+				{%if uni_data.UniWorkTime%}
+					{{uni_data.UniWorkTime|safe}}
+				{%else%}
+				    None
+				{%endif%}
+</p>
+	</div>
+
+</div>
+<div class="table1">
+	<div class="icon_box">
+		<img src="{%static 'images/message.png'%}" alt="">
+	</div>
+	<div class="title_header">
+		<p>
+
+			{%if uni_data.UniGmail%}
+				{{uni_data.UniGmail|safe}}
+			{%else%}
+				None
+			{%endif%}
+
+		</p>
+	</div>
+</div>
+<div class="table1">
+	<div class="icon_box">
+		<img src="{%static 'images/call.png'%}" alt="">
+	</div>
+	<div class="title_header">
+		<p>{{uni_data.UniNumber}}</p>
+	</div>
+</div>
+		</div>
+		<a target="_blank"   href="{{uni_data.UniAdressForLink|safe}}">
+		<button  class="button button2">Map</button>
+	    </a>
+	</div>
+
+	{%endfor%}
+{%endblock%}
