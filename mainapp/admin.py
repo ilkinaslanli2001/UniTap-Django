@@ -16,15 +16,15 @@ class uni_list_Admin(admin.ModelAdmin):
     list_filter = ['UniName']
     list_display = ['UniName']
     fieldsets=[
-        ('Universitetin adı',{"fields":["UniName"]}),
-        ('Şagirdlərin sayı',{"fields":["UniStudentsCount"]}),
-        ('Həmin ilin maksimum və minimum ödənişi',{"fields":["UniYear", "UniMinPayment",  "UniMaxPayment"]}),
-        ('Yataqxana',{"fields":["Dormitory"]}),
-        ('Əlaqə nömrəsi,Gmail və Universitetin iş vaxtları',{"fields":["UniNumber","UniGmail","UniWorkTime"]}),
-        ('Universitetin veb səhifəsi',{"fields":["UniWebsite"]}),
-        ('Universitetin şəkilləri',{"fields":["UniImage1","UniImage2","UniImage3","UniImage4","UniImage5","UniImage6","UniImage7",
+        ('Universitetin name',{"fields":["UniName"]}),
+        ('Student count',{"fields":["UniStudentsCount"]}),
+        ('Max and Min University Fee of current year',{"fields":["UniYear", "UniMinPayment",  "UniMaxPayment"]}),
+        ('Dormitory',{"fields":["Dormitory"]}),
+        ('Contact Number, Gmail və University work hours',{"fields":["UniNumber","UniGmail","UniWorkTime"]}),
+        ('Universitetiy website',{"fields":["UniWebsite"]}),
+        ('Universitety photos',{"fields":["UniImage1","UniImage2","UniImage3","UniImage4","UniImage5","UniImage6","UniImage7",
                                             "UniImage8","UniImage9","UniImage10","UniImage11","UniImage12","UniImage13","UniImage14","UniImage15"]}),
-        ("Universitetin adresi",{"fields":["UniAdressForLink", "UniAdressForUser"]})
+        ("Universitety address",{"fields":["UniAdressForLink", "UniAdressForUser"]})
     ]
     formfield_overrides = {
         models.TextField: {'widget': TinyMCE()},

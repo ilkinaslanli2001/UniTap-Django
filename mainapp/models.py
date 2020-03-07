@@ -18,12 +18,12 @@ class uni_list(models.Model):
     UniName = models.CharField(max_length=250,null=False,blank=False,verbose_name="University name:")
 
     UniStudentsCount =  models.FloatField(null=True,blank=True,verbose_name="Student count:")
-    UniYear = models.IntegerField(null=False,blank=False,default=now.year,verbose_name="Nəzərdə tutulmuş il:")
-    UniMinPayment =  models.IntegerField(null=False,blank=False,default=1000,verbose_name="Minimum ödəniş:")
-    UniMaxPayment= models.IntegerField(null=False,blank=False,default=1500,verbose_name="Maksimum ödəniş:")
+    UniYear = models.IntegerField(null=False,blank=False,default=now.year,verbose_name="Year:")
+    UniMinPayment =  models.IntegerField(null=False,blank=False,default=1000,verbose_name="Min University fee:")
+    UniMaxPayment= models.IntegerField(null=False,blank=False,default=1500,verbose_name="Min University fee:")
     YesNoCh=(
-        ("Yes","No"),
-        ("Yes","No"),
+        ("Yes","Yes"),
+        ("No","No"),
         )
     Dormitory = models.CharField(max_length=100,choices=YesNoCh,verbose_name="Dormitory:",default="No")
     
